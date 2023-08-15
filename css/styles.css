@@ -316,3 +316,19 @@ body {background: #eee;}
     0% { transform: rotate(3deg); }
     100% { transform: rotate(-3deg); }
 }
+
+/* Add your other CSS styles here */
+
+.alert-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  z-index: 1000;
+}
