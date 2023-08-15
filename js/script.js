@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const downloadButton = document.querySelector(".download-button");
-    const alertBox = document.getElementById("alert-box");
+    const downloadButton = document.querySelector(".btn");
 
     downloadButton.addEventListener("click", function() {
-        alertBox.style.display = "block";
+        const alertBox = document.createElement("div");
+        alertBox.className = "alert-box";
+        alertBox.textContent = "Black VPN will be released soon !";
+        document.body.appendChild(alertBox);
+
         setTimeout(function() {
-            alertBox.style.display = "none";
-        }, 5000); // Hide after 5 seconds
+            alertBox.remove();
+        }, 5000); // Remove after 5 seconds
     });
 });
